@@ -6,6 +6,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    background-color: #ffffff;
+}
+
 .resume-contents {
     min-height: 100vh;
     width: 80%;
@@ -82,6 +86,8 @@
 .references ul li {
     padding: .4rem 0;
     color: #983ba0;
+    align-items: center;
+    font-size: 18px;
 }
 
 .contact-info ul li i,
@@ -97,6 +103,8 @@
 .skills ul li p {
     padding: .4rem 0;
     color: #983ba0;
+    font-size: 18px;
+    align-items: center;
 }
 
 .right-section-contents {
@@ -183,5 +191,37 @@ a {
     text-decoration: none;
     color: #983ba0;
 }
+
+/* Media queries */
+@media screen and (max-width:780px) {
+    .experience-contents,
+    .education-contents,
+    .awards-contents {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:780px) {
+    .left-section {
+        grid-column: span 3;
+    }
+    
+    .right-section {
+        grid-column: span 4;
+    }
+    
+}
+
+@media screen and (max-width:1200px) {
+    .resume-contents {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width:390px) {
+    .resume-contents {
+        width: 100%;
+        margin: 0 auto;
+    }
 
 
